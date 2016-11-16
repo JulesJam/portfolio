@@ -138,6 +138,10 @@ body{
   padding-top:10px;
 }
 
+.boxed{
+  float:right;
+}
+
 .contactslist{
   list-style: none;
 }
@@ -145,7 +149,9 @@ body{
 .contactlink{
   color:#ef5941;
   vertical-align: 20px;
-
+}
+.project_title{
+  padding-top: 30px;
 }
 
 #historybutton {

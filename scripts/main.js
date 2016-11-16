@@ -22,6 +22,8 @@ var whoispanel = document.getElementById("whoispanel");
 whoispanel.style.display = "none";
 var projects = document.getElementById("projectsbutton");
 var history = document.getElementById("historybutton");
+var historypanel = document.getElementById("historypanel");
+historypanel.style.display="none";
 var contacts = document.getElementById("contactsbutton");
 var contactspanel = document.getElementById("contactspanel");
 contactspanel.style.display ="none";
@@ -50,6 +52,8 @@ whoisbutton.addEventListener("click", function(e){
   panellarge.style.display = "block";
   whoispanel.style.display ="block";
   contactspanel.style.display ="none";
+  historypanel.style.display ="none";
+  projectspanel.style.display ="none";
  
   }
   else{
@@ -62,12 +66,52 @@ whoisbutton.addEventListener("click", function(e){
 
 });
 
+projectsbutton.addEventListener("click", function(e){
+  if(logolarge.id === "logolarge"){
+  logolarge.id = "logosmall";
+  panellarge.style.display = "block";
+  projectspanel.style.display ="block";
+  whoispanel.style.display ="none";
+  contactspanel.style.display ="none";
+  historypanel.style.display ="none";
+  }
+  else{
+    panellarge.style.display ="none";
+    logolarge.id = "logolarge";
+    message.style.display = "none";
+    projectspanel.style.display ="none";
+
+  };
+
+});
+
+historybutton.addEventListener("click", function(e){
+  if(logolarge.id === "logolarge"){
+  logolarge.id = "logosmall";
+  panellarge.style.display = "block";
+  historypanel.style.display ="block";
+  whoispanel.style.display ="none";
+  contactspanel.style.display ="none";
+  projectspanel.style.display ="none";
+  }
+  else{
+    panellarge.style.display ="none";
+    logolarge.id = "logolarge";
+    message.style.display = "none";
+    historypanel.style.display ="none";
+
+  };
+
+});
+
 contactsbutton.addEventListener("click", function(e){
   if(logolarge.id === "logolarge"){
   logolarge.id = "logosmall";
   panellarge.style.display = "block";
   contactspanel.style.display ="block";
   whoispanel.style.display ="none";
+  historypanel.style.display ="none";
+  projectspanel.style.display ="none";
   }
   else{
     panellarge.style.display ="none";
