@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>julesjam.com</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+ 
+
+</head>
+<body class='business_card'>
+  <div class='temporary_business_card'>
+    Thanks for scanning my business card. I am currently building my site having just completed my GA Full Stack Developer Course. It will be fully up by 20th November 2016 in the meanwhile please do <a href='mailto:julian@julesjam.com'>mail</a> me.Please see my CV below: 
+  </div>
+  <div class="cvcontainer"><a href="files/julian_wyatt_cv.pdf" download target="_blank">
+    <img class="cv" src="images/CVp1V3.png" alt="Julian Wyatt CV page 1" title="CV Page 1">
+    <img class="cv" src="images/CVp2V3.png" alt="Julian Wyatt CV page 2" title="CV Page 2"></a>
+  </div>
+</body>
+</html>
