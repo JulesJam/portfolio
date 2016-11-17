@@ -176,12 +176,12 @@ body{
   padding-bottom: 10px;
 }
 
-#historybutton {
+#technologiesbutton {
   left:0%;
   top:50%;
   background-image: radial-gradient(circle at 100% 0, rgba(204,0,0,0) 25%, rgba(168, 109, 155, .9) 15px);
 }
-#historybutton:hover {
+#technologiesbutton:hover {
   background-image: radial-gradient(circle at 100% 0, rgba(204,0,0,0) 25%, rgba(168, 109, 155, .5) 15px);
 }
 
