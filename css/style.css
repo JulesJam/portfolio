@@ -11,7 +11,7 @@ body{
 #logolarge{
   display:block;
   position:relative;
-  margin: 12% auto;
+  margin: 9% auto;
   margin-bottom: 3%;
   font-size: 20px;
   width:400px;
@@ -67,6 +67,11 @@ body{
   color: #fffff0;
 }
 
+.linkbox{
+  display:block;
+  clear:right;
+}
+
 #warning{
   font-size: 25px;
   text-align: center;
@@ -109,6 +114,11 @@ body{
   background-image: radial-gradient(circle at 0 100%, rgba(204,0,0,0) 25%, rgba(157, 167, 85, .5) 15px);
 }
 
+
+.projectsummarytext{
+  clear:left;
+  float:left;
+}
 #whoisbutton {
   color:#fffff0;
   left:0%;
@@ -128,6 +138,12 @@ body{
   margin: 15px 10px 0 3px;
   width:50px;
  
+}
+
+.projectsnapshot{
+  max-width:200px;
+  margin: 15px 5px 0 0;
+  float:left;
 }
 .flow{
   float: left;
@@ -151,7 +167,13 @@ body{
   vertical-align: 20px;
 }
 .project_title{
-  padding-top: 30px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.projectlinks{
+  font-size: 16px;
+  display: inline-block;
+  padding-bottom: 10px;
 }
 
 #historybutton {
@@ -197,6 +219,16 @@ body{
   padding-right: 13px;
 }
 
+#strapline{
+  display:block;
+  position: absolute;
+  text-align: center;
+  font-size: 22px;
+  margin-top:10%;
+  top:100%;
+  width:100%;
+}
+
 .temporary_business_card{
   display:block;
   margin: 20px auto;
@@ -215,5 +247,41 @@ body{
   width:305px;
   margin:5px;
   float:left;
+
+}
+
+@media only screen 
+  and (min-device-width: 319px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { #logolarge{
+  display:block;
+  position:relative;
+  margin: 50% auto;
+  margin-bottom: 3%;
+  font-size: 20px;
+  width:400px;
+  height:400px;
+  -webkit-transition: all 0.5s ease-in-out;
+
+}
+
+}
+
+@media only screen 
+  and (min-device-width: 100px) 
+  and (max-device-width: 318px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { #logolarge{
+  display:block;
+  position:relative;
+  margin: 50% auto;
+  margin-bottom: 3%;
+  font-size: 10px;
+  width:200px;
+  height:200px;
+  -webkit-transition: all 0.5s ease-in-out;
+
+}
 
 }

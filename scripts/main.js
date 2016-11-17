@@ -27,6 +27,7 @@ historypanel.style.display="none";
 var contacts = document.getElementById("contactsbutton");
 var contactspanel = document.getElementById("contactspanel");
 contactspanel.style.display ="none";
+var strapline = document.getElementById("strapline");
 
 
 
@@ -36,11 +37,13 @@ logo.addEventListener("click", function(e){
   corners.className = "cornersplit";
   message.style.display = "block";
   daystolaunch.innerHTML = daystogo;
+  strapline.style.display ="none";
   }
   else{
     panellarge.style.display ="none";
     logolarge.id = "logolarge";
-    message.style.display = "none"
+    message.style.display = "none";
+    strapline.style.display ="block";
 
   };
 
@@ -54,6 +57,7 @@ whoisbutton.addEventListener("click", function(e){
   contactspanel.style.display ="none";
   historypanel.style.display ="none";
   projectspanel.style.display ="none";
+  strapline.style.display ="none";
  
   }
   else{
@@ -61,6 +65,7 @@ whoisbutton.addEventListener("click", function(e){
     logolarge.id = "logolarge";
     message.style.display = "none"
     whoispanel.style.display ="none"
+    strapline.style.display ="block";
 
   };
 
@@ -74,12 +79,14 @@ projectsbutton.addEventListener("click", function(e){
   whoispanel.style.display ="none";
   contactspanel.style.display ="none";
   historypanel.style.display ="none";
+  strapline.style.display ="none";
   }
   else{
     panellarge.style.display ="none";
     logolarge.id = "logolarge";
     message.style.display = "none";
     projectspanel.style.display ="none";
+    strapline.style.display ="block";
 
   };
 
@@ -93,12 +100,14 @@ historybutton.addEventListener("click", function(e){
   whoispanel.style.display ="none";
   contactspanel.style.display ="none";
   projectspanel.style.display ="none";
+  strapline.style.display ="none";
   }
   else{
     panellarge.style.display ="none";
     logolarge.id = "logolarge";
     message.style.display = "none";
     historypanel.style.display ="none";
+    strapline.style.display ="block";
 
   };
 
@@ -112,12 +121,14 @@ contactsbutton.addEventListener("click", function(e){
   whoispanel.style.display ="none";
   historypanel.style.display ="none";
   projectspanel.style.display ="none";
+  strapline.style.display ="none";
   }
   else{
     panellarge.style.display ="none";
     logolarge.id = "logolarge";
     message.style.display = "none";
     contactspanel.style.display ="none";
+    strapline.style.display ="block";
 
   };
 
@@ -144,7 +155,7 @@ logotext.addEventListener("click", function(e){
     panellarge.style.display ="none";
     logolarge.id = "logolarge";
     message.style.display = "none";
-    message.style.display = "none";
+    strapline.style.display ="block";
   };
 
 });
