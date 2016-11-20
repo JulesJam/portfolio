@@ -104,21 +104,75 @@ body{
   height:40%;
   -webkit-transition: all 0.5s ease-in-out;
 }
-#projectsbutton {
+#projects_button {
   left:50%;
   top:0%;
   background-image: radial-gradient(circle at 0 100%, rgba(204,0,0,0) 25%, rgba(157, 167, 85, .9) 15px);
 }
 
-#projectsbutton:hover {
+#projects_button:hover {
   background-image: radial-gradient(circle at 0 100%, rgba(204,0,0,0) 25%, rgba(157, 167, 85, .5) 15px);
+}
+
+.technologies_container{
+  clear:left;
+  display:block;
+  color:rgba(81, 81, 81, 1.0);
+  text-align: center;
+  border: solid 3px rgba(239, 89, 65, 1.0);
+  
+
+}
+
+.projectsnapshot{
+  max-width:200px;
+  margin: 15px 5px 0 0;
+  float:left;
+}
+
+.project_tags{
+  display: block;
+  height: 130px;
+  margin-bottom: 20px;
 }
 
 
 .projectsummarytext{
-  clear:left;
-  float:left;
+  position: relative;
+
+  margin-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: solid 1px grey;
+  max-height: 200px;
+  overflow: hidden;
 }
+
+
+.project_title{
+  display:inline-block;
+  
+  margin-bottom: 15px;
+}
+.projectlinks{
+  font-size: 12px;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.more{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  text-align: right;
+  width:  100%;
+  background: none; 
+  background: -webkit-linear-gradient(left top, rgba(255,255,255,.3), rgba(255,255,255,1)); 
+  background: -o-linear-gradient(bottom right, rgba(255,255,255,.3), rgba(255,255,255,1)); 
+  background: -moz-linear-gradient(bottom right, rgba(255,255,255,.3), rgba(255,255,255,1)); 
+  background: linear-gradient(to bottom right, rgba(255,255,255,.3), rgba(255,255,255,1)); 
+}
+
+
 #whoisbutton {
   color:#fffff0;
   left:0%;
@@ -140,11 +194,7 @@ body{
  
 }
 
-.projectsnapshot{
-  max-width:200px;
-  margin: 15px 5px 0 0;
-  float:left;
-}
+
 .flow{
   float: left;
   border-radius: 25%;
@@ -166,16 +216,7 @@ body{
   color:#ef5941;
   vertical-align: 20px;
 }
-.project_title{
-  display:inline-block;
-  
-  margin-bottom: 15px;
-}
-.projectlinks{
-  font-size: 12px;
-  display: inline-block;
-  padding-bottom: 10px;
-}
+
 
 #technologiesbutton {
   left:0%;

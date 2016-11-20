@@ -20,7 +20,7 @@ function animations(){
   var whois = document.getElementById("whoisbutton");
   var whoispanel = document.getElementById("whoispanel");
   whoispanel.style.display = "none";
-  var projects = document.getElementById("projectsbutton");
+  var projects = document.getElementById("projects_button");
   var technologies = document.getElementById("technologiesbutton");
   var technologiespanel = document.getElementById("technologiespanel");
   technologiespanel.style.display="none";
@@ -50,9 +50,15 @@ function animations(){
   });
 
   whoisbutton.addEventListener("click", function(e){
+  
+    if(this.className == "cornersplit") closepanel();
+    
     if(logolarge.id === "logolarge"){
     openpanel();
     whoispanel.style.display ="block";
+    /*this.style.height = "45%";
+    this.style.width = "45%";
+    this.style.margin ="0 5% 5% 0";*/
     }
     else{
       closepanel();
@@ -62,10 +68,16 @@ function animations(){
 
   });
 
-  projectsbutton.addEventListener("click", function(e){
+  projects_button.addEventListener("click", function(e){
+
+    if(this.className == "cornersplit") closepanel();
+
     if(logolarge.id === "logolarge"){
     openpanel();
     projectspanel.style.display ="block";
+   /* this.style.height = "45%";
+    this.style.width = "45%";
+    this.style.margin ="0 0 0 5%";*/
     }
     else{
       closepanel();
@@ -75,9 +87,15 @@ function animations(){
   });
 
   technologiesbutton.addEventListener("click", function(e){
+
+    if(this.className == "cornersplit") closepanel();
+
     if(logolarge.id === "logolarge"){
     openpanel();
     technologiespanel.style.display ="block";
+    /*this.style.height = "45%";
+    this.style.width = "45%";
+    this.style.margin ="5% 5% 0 0";*/
    
     }
     else{
@@ -89,13 +107,21 @@ function animations(){
   });
 
   contactsbutton.addEventListener("click", function(e){
+
+    if(this.className == "cornersplit") closepanel();
+
+
     if(logolarge.id === "logolarge"){
     openpanel();
     contactspanel.style.display ="block";
+   /* this.style.height = "45%";
+    this.style.width = "45%";
+    this.style.margin ="5% 0 0 5%";*/
     }
     else{
       closepanel();
       contactspanel.style.display ="none";
+
     };
 
   });
@@ -103,11 +129,11 @@ function animations(){
 
 
 
-  logotext.addEventListener("click", function(e){
+/*  logotext.addEventListener("click", function(e){
     if(logolarge.id === "logolarge"){
     logolarge.id = "logosmall";
     message.style.display = "block";
-    daystolaunch.innerHTML = daystogo;
+    // daystolaunch.innerHTML = daystogo;
     closelogo();
     strapline.style.display ="none"
 
@@ -119,7 +145,7 @@ function animations(){
       strapline.style.display ="block";
     };
 
-  });
+  });*/
 
   logo.addEventListener("mouseover", function(e){
     if(logolarge.id ==="logolarge"){
@@ -160,7 +186,14 @@ function animations(){
     panellarge.style.display ="none";
     logolarge.id = "logolarge";
     message.style.display = "none";
-    
+  /*
+    for(i=0; i<corners.length; i++){
+
+      corners[i].style.margin = "0";
+      corners[i].style.height = "50%";
+      corners[i].style.width = "50%";
+    }*/
+
     strapline.style.display ="block";
     logo.style.display ="block";
   };
