@@ -173,7 +173,6 @@ function animations(){
 
   function closelogo(){
     var cornersplit = document.getElementsByClassName('cornersplit')
-    console.log('cornersplit');
     for(i=0; i=cornersplit.length;i++){
     cornersplit[i-1].className = "corner";
     };
