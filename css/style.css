@@ -3,17 +3,13 @@ body{
   background-color: white;
 }
 
-.business_card{
-  background-color: grey;
-}
-
 
 #logolarge{
   display:block;
   position:relative;
   margin: 9% auto;
   margin-bottom: 3%;
-  font-size: 4vh;
+  font-size: 3.5vh;
   width:50vh;
   height:50vh;
   -webkit-transition: all 0.5s ease-in-out;
@@ -24,9 +20,11 @@ body{
   display:block;
   position:relative;
   margin: 3% 0 0 3%;
-  font-size: 4vh;
+  font-size: 6px;
   width: 10vh;
   height:10vh;
+  min-width:70px;
+  min-height: 70px;
   -webkit-transition: all 0.5s ease-in-out;
 
 }
@@ -241,7 +239,7 @@ body{
 #logotext{
   display:block;
   position:absolute;
-  font-size: 14px;
+  font-size: 2.5vh;
   left:20%;
   top:42.0%;
   width: 50%;
@@ -263,17 +261,23 @@ body{
   width:100%;
 }
 
-.temporary_business_card{
+.business_card{
   display:block;
   margin: 20px auto;
-  width: 200px;
-  height:200px;
+  max-width: 600px;
   text-align: center;
+}
+
+.bc_mepic{
+  width:200px;
+  border-radius: 25%;
+  margin: 0 auto;
 }
 .cvcontainer{
   display: block;
   margin: 0 auto;
-  width: 640px;
+  padding: 10px;
+  width: 660px;
 }
 
 .cv{
@@ -281,6 +285,7 @@ body{
   width:305px;
   margin:5px;
   float:left;
+  border:solid 5px rgba(81, 81, 81, 1.0);
 
 }
 
@@ -308,6 +313,8 @@ body{
   font-size: 6px;
   width: 10vh;
   height:10vh;
+  min-width:70px;
+  min-height: 70px;
   -webkit-transition: all 0.5s ease-in-out;
 
 }
@@ -357,6 +364,8 @@ h2{
   font-size: 6px;
   width: 10vh;
   height:10vh;
+  min-width:70px;
+  min-height: 70px;
   -webkit-transition: all 0.5s ease-in-out;
 
 }

@@ -8,8 +8,9 @@
 
 </head>
 <body class='business_card'>
-  <div class='temporary_business_card'>
-    Thanks for scanning my business card. I am currently building my site having just completed my GA Full Stack Developer Course. It will be fully up by 20th November 2016 in the meanwhile please do <a href='mailto:julian@julesjam.com'>mail</a> me.Please see my CV below: 
+  <img class ='bc_mepic' src="images/mepicself.png" alt="picture of Julian Wyatt" title="Julian Wyatt">
+  <div class='business_card'>
+    Hello. My name is Julian Wyatt, if you have landed on this page you must have scanned my business card, thank you for taking the time to do that. I have just completed the Web Development Immersive at <a href="https://generalassemb.ly/" target="_blank">General Assembly</a> in London and am now hoping to start a new career in web development. I know there is a huge amount more to learn, but I do feel that in addition to what I have learnt at General Assembly I have quite a bit of other experience from my previous career in Pharmacy. I should emphasise that I am looking for a junior developers job currently and I am happy to accept an Intern or similar position. In all my other jobs I have started at the bottom and worked my way up so I am not afraid of making the tea or doing the lunch run, I am just really excited about doing something I have wanted to do for many years so hopefully we will speak again... In the meanwhile feel free to <a href='mailto:julian@julesjam.com'>mail</a> me. Alternatively to learn more please click my CV below or go to my main site<a href="index.html" alt="link to main site"> JulesJam.com</a> 
   </div>
   <div class="cvcontainer"><a href="files/julian_wyatt_cv.pdf" download target="_blank">
     <img class="cv" src="images/CVp1V3.png" alt="Julian Wyatt CV page 1" title="CV Page 1">
