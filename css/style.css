@@ -309,6 +309,37 @@ body{
 
 }
 
+#logosmall{
+  display:block;
+  position:relative;
+  margin: 0 auto;
+  margin-top: 3%;
+  font-size: 6px;
+  width: 10vh;
+  height:10vh;
+  -webkit-transition: all 0.5s ease-in-out;
+
+}
+
+h2{
+  text-align: center;
+}
+
+.contactslist{
+  margin: margin 0 auto;
+}
+
+#fadeouttop{
+  display: none;
+}
+
+.contact_list_item{
+  display:block;
+  margin: 0 0 0 100px;
+}
+
+
+
 }
 
 @media only screen 
@@ -323,6 +354,18 @@ body{
   font-size: 10px;
   width:200px;
   height:200px;
+  -webkit-transition: all 0.5s ease-in-out;
+
+}
+
+#logosmall{
+  display:block;
+  position:relative;
+  margin: 0 auto;
+  margin-top: 3%;
+  font-size: 6px;
+  width: 10vh;
+  height:10vh;
   -webkit-transition: all 0.5s ease-in-out;
 
 }
