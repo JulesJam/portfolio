@@ -23,11 +23,40 @@ function animations(){
   var projects = document.getElementById("projects_button");
   var technologies = document.getElementById("technologiesbutton");
   var technologiespanel = document.getElementById("technologiespanel");
-  technologiespanel.style.display="none";
+  technologiespanel.style.display = "none";
   var contacts = document.getElementById("contactsbutton");
   var contactspanel = document.getElementById("contactspanel");
-  contactspanel.style.display ="none";
+  contactspanel.style.display = "none";
   var strapline = document.getElementById("strapline");
+  var project_full_text = document.getElementsByClassName("project_full_text");
+  for(i=0; i<project_full_text.length; i++){
+    project_full_text[i].style.display = "none"; 
+  }
+
+  var more = document.getElementsByClassName("more");
+
+
+  for(i=0; i<more.length; i++){
+    more[i].textContent="more...";
+    more[i].addEventListener("click",function(e){
+      var pft = this.id.slice(1);
+      console.log(this.textContent);
+      if(this.textContent === "more..."){
+      this.textContent ="...less";
+      project_full_text[pft].style.display = "block"
+     
+      }
+      else
+      {
+        this.textContent="more...";
+        project_full_text[pft].style.display = "none"
+        
+      };
+
+
+    })
+  }
+
 
 
 
@@ -171,6 +200,8 @@ function animations(){
     };
   });
 
+
+
   function closelogo(){
     var cornersplit = document.getElementsByClassName('cornersplit')
     for(i=0; i=cornersplit.length;i++){
@@ -182,6 +213,9 @@ function animations(){
 
   function closepanel(){
     closelogo();
+    for(i=0; i<project_full_text.length; i++){
+      project_full_text[i].style.display = "none"; 
+    }
     panellarge.style.display ="none";
     logolarge.id = "logolarge";
     message.style.display = "none";

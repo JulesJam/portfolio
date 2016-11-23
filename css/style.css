@@ -132,7 +132,7 @@ body{
   margin-top: 10px;
   padding-bottom: 20px;
   border-bottom: solid 1px grey;
-  max-height: 200px;
+  /*max-height: 200px;*/
   overflow: hidden;
 }
 
@@ -149,7 +149,6 @@ body{
 }
 
 .more{
-  display: none;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -335,7 +334,9 @@ h2{
   display:block;
   margin: 0 0 0 100px;
 }
-
+#logotext{
+  font-size: 12px;
+}
 
 
 }
@@ -382,6 +383,10 @@ h2{
 .contact_list_item{
   display:block;
   margin: 0 0 0 100px;
+}
+
+#logotext{
+  font-size: 14px;
 }
 
 

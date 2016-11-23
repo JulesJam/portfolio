@@ -23,7 +23,7 @@
     </div>
     <img id="logo" src="images/jamicon.png" alt="julesjam logo" title="julesjam.com">
     <div id="logotext">julian.wyatt@julesjam.com<br><span id="logocontactnumber">07805 574707<span></div>
-    <div id="strapline">Full Stack Developer Keen On Mean</div>
+    <div id="strapline">Full Stack Developer Keen On MEAN</div>
   </div>
 
   <div id="underconstruction">Jules Jam Is Under Construction<br>All will be revealed in <span id="daystolaunch"></span> days</div>
@@ -48,6 +48,8 @@
         <p class = "flowing"> Along the way I have taught myself Basic, DOS, QBasic, Visual Basic, Filemaker Scripting language, basic HTML, CSS, PHP and HL7.
 
         This year I was able to take time to undertake formal web devloper training with General Assembly, attending the Web Development Immersive course for 12 weeks through the summer of 2016. Over the 12 weeks we covered a whole host of the most up to date technologies, as listed in the education section of my site. I realise there is still alot to learn but now have a good formal grounding in web development.
+
+        I am currently looking for a Junior Web Developer position in London.
         </p>
       </div>
       <div id="whoiscv">
@@ -68,15 +70,25 @@
     <div id="projectspanel">
       <h2>Projects...</h2>
       <img class="flow icons" src="images/generalassembly.png" alt="General Assembly's Icon" title = "General Assembly's Icon">
-      <p>Here are the projects I have worked on. The first four are projects which I created during the Full Stack Web Developer Course that I undertook through <a href="https://generalassemb.ly/" target="_blank">General Assembly</a>. They are all pretty much minimum viable products and are not fully debugged. I hope to be adding more very soon!
+      <p>Here are the projects I have worked on.</p>
+      <p>
+        The first four are projects which I created during the Full Stack Web Developer Course that I undertook at <a href="https://generalassemb.ly/" target="_blank">General Assembly</a>. They are all pretty much <strong>minimum viable products</strong> and are not fully debugged.
       </p>
+      <p>
+      <p>
+       I intend to return to these projcects, as time permits, to fix the bugs. I will be adding new projects very soon!
+      </p>
+      <hr>
+      <h2>Process...</h2>
+      <p>I like to work by starting writing some pseudo code, a user journey to describe the project or by making a list of points I want to include in the application. I now use <em>Trello</em> to record these points so that they become action points. Once I have what I feel is a relatively comprehensive list of points I like to build fully formatted wireframes - I use <em> Omnigraffle </em> for this. I find that this helps to identify issues with missing components and makes it easier to keep a vision of the end product in focus. Once the wireframes are complete I add to the <em>Trello</em> board creating blocks of tasks to achieve.</p>
+      <p>This process is still evolving but seems to work well.</p>
       <hr>
 
       <div class="project_container">
         <div class="project_tags">
           <img class="flow icons" src="images/jamicon.png" alt="The jules jam icon" title = "The jules jam icon">
           <img class="projectsnapshot" src="images/scarbble.png" alt="Screenshot of Scarbble game" title = "Screenshot of Scarbble game">
-          <h3 class = "project_title">Project #1 - SCARBBLE</h3>
+          <h3 class = "project_title">Project #1 - SCARBBLE<br>July 2016</h3>
           <div class="linkbox">
           <a class="projectlinks" href="https://scarbble.herokuapp.com/" target="_blank">URL: https://scarbble.herokuapp.com/</a>  <a class="projectlinks" href="https://github.com/JulesJam/Scrabble" target="_blank">GitHub: https://github.com/JulesJam/Scrabble</a>
           </div>
@@ -85,13 +97,32 @@
           HTML CSS JavaScript jQuery API's Speech
         </div>
         <div class="projectsummarytext" id="scarbblesummary">
-          Based on Scrabble, SCARBBLE was my first project built over 4 days. 2 players can play using regular scrabble rules. The game uses two API’s; one to check that words are valid and the other to speak the definition if speech is activated.
-            <div class="more">
-            more...
-            </div>
+          <p>
+            Based on Scrabble, SCARBBLE was my first project built over 4 days. 2 players can play using regular scrabble rules. The game uses two API’s; one to check that words are valid and the other to speak the definition if speech is activated.
+          </p>
+          <div class="project_full_text" id="pft0">
+            <p>
+              This was my first attempt at writing a full web applictaion and to use Javascript / jQuery. I had 4 days to build the app over a long weekend.
+            </p>
+            <p>
+              I am paticulalry pleased that the app uses a constructor function to build the board and two API's, at this point in the WDI course we had not covered API's so I was pleased to implement these myself. 
+            </p>
+            <p>
+              If you currently try to play the game there is an issue with way in which the letter racks are currently auto-positioning but this can be fixed. The project was quite a challenge from a logic point of view as the scoring is a little more complex than I had originally anticipated, the app checks word validty using the Mashape Words API. Currently the logic will score words that cross over but there are some issues with the scoring words where the word starts or end with a letter that pre-exists on the board. On the last day of the project I found a better way to analyse the play for word intersections and re-wrote the logic for words intersecting on characters other than the first and last but still need to do this for other intersections - I intend to fix this in a re-write.
+            </p>
+            <p>
+              To play; the player in play clicks a letter on their rack and then clicks the square on the board where they want to play, letters can only be placed in playable squares. Whne the word is complete the player can click 'commit' to play the word. If there is no playable word the player can skip a turn and play passes to the other player.
+            </p>
+            <p>
+              If you click the speaker symbol at the top left of the screen then the word definitions will be converted to speech using the HTML5 Web Speech API. originally the app 'spoke' every letter that was picked up and put down - currently most of the seech options are turned off as during development they were becoming somewhat annoying!!
+            </p>
+          </div>
+          <div class="more" id="m0">
+          more...
+          </div>
+          
         </div>
-        <div class="projectfulltext" id="scarbblefull">
-        </div>
+        
       </div>
 
       <div class="project_container">
@@ -111,12 +142,26 @@
 
         <div class="projectsummarytext" id="mygymsummary">
           An authenticated web app to enable gym users to register with a gym, book classes and communicate with the gym / trainers using websocket messaging. The system generates a QR Membership card. Built over 7 days.
-            <div class="more">
-            more...
-            </div>
+          <div class="project_full_text" id="pft1">
+            <p>
+              Built using Ruby on Rails, this was a first <em>Ruby</em> project. The application was inspired by a friend who owns a gym and wants to rebuild their web site. This application was built as a proof of concept whilst fulfilling the brief of building an authenticated <em> Ruby on Rails </em> application.
+            </p>
+            <p>
+              Some key points were: to have some means of generating a user membership card which could potentially be used as an entry key, for this I considered looking at <em>nfc</em> but with only 7 days from concept to completion this would have been too much of a challenge so I opted on generating a QR code using the rqr-code GEM. This could potentially be read by a qr code reader linked to an automated lock...an interesting future project.
+            </p>
+            <p>
+              A photo gallery was something that 'the client' was interested in so I added the Carrierwave GEM, this was then also used to add user images. 
+            </p>
+            <p>
+              As a challenge I thought it would be useful to have a means that trainers could communicate with their clients using a chat module within the application so there is also websocket based chat.
+            </p>
+            <p><strong>Bugs!</strong>This is very much MVP and currently the app on Heroku does have a number of bugs. If you would like to test this further please fork a copy from my GitHub, as with all my projects from WDI I intend to re-visit <em>MyGym</em> to work on fixing the bugs now that I have completed the course.
           </div>
-        <div class="projectfulltext" id="mygymfull">
+          <div class="more" id="m1">
+            more...
+          </div>
         </div>
+       
       </div>
 
       <div class="project_container">
@@ -131,16 +176,46 @@
         </div>
 
         <div class="technologies_container">
-          HTML, CSS, JQuery, MongoDB, Express, Node, Google Maps API BCRYPT (Authentication)
+          HTML, CSS, jQuery, MongoDB, Express, Node, Google Maps API BCRYPT (Authentication)
         </div>
         <div class="projectsummarytext" id="eighty-clickssummary">
           A team project built over 5 days this is an educational game where users navigate around a Google Maps world currently using flags, the aim is beat your opponent back to your starting point.
-            <div class="more">
+          <div class="project_full_text" id="pft2">
+            <p>
+            This was the first group project on the General Assembly Web Development Immersive course which enabled us to explore a different way of working. Working as a team enabled us to use Git and Git Hub in a collaborative fashion.
+            </p>
+            <p>
+              The scope of this project was to use a MongoDB database and to utilise at least one API to produce an application. After much consideration my team decided to build a version of <em>Risk</em>. Having decided how to divide the work between each of the team members we started work building a module using the Google Maps API and Fusion Layers.  Unfortunately we discovered, after almost 3 days of coding, implementing Fusion Layers in the way that we wanted to would take considerably longer than we had available and so we had to make the decision to scrap 2 days work and start again.
+            </p>
+            <p>
+              The final project was a two player game based on the <em>Jules Verne</em> story of <em>Around The World In Eight Days</em> the application utilises Google Maps API and the RestCountries API. 
+            </p>
+          
+            <h4>Start of the Game</h4>
+            <p>
+              The game starts in the UK in honour of the Jules Verne book "80 Days Around the World", though this could be set to any country in the world.
+            </p>
+            <h4>First Round</h4>
+            <p>
+              At the start of the round the player has to decide which country to travel to next. The player may choose between all the UK's neighbour countries. Player two starts after player one has selected a country and can chose all the neighbouring countries apart for the one selected by Player 1.
+            </p>
+            <h4>Next Round</h4>
+            <p>
+              As aforementioned, the aim of the game is to return to the UK in less than 80 clicks touching all the continents. Once one player visits a country the other player is able to visit it and has to find a way around.
+            </p>
+            <h4>End of the Game</h4>
+            <p>
+              The game ends if: 1) One of the two players returns to the UK. 2) When one of the to players exceed the 80 clicks. 3) One of the two players remains blocked in a country (no neighbour countries available).
+            </p>
+            <p>
+              For the project I worked with Antonio Rossi and Chetan Barot and it is our intention to look at developing this game further as we believe it has some educational potential.
+            </p>
+          </div>
+          <div class="more" id="m2">
             more...
-            </div>
+          </div>
         </div>
-        <div class="projectfulltext" id="eighty-clicksfull">
-        </div>
+    
       </div>
 
       <div class="project_container">
@@ -158,14 +233,29 @@
           HTML, CSS,  Mongo,  Express, Angular, Node, BCRYPT and Oauth Google Maps API & Zomato API's
         </div>
 
-        <div class="projectsummarytext" id="scarbblesummary">
-          An authenticated web app where users can build a profile, users are then shown on a map, other users can interact with live chat. If users choose to eat, local restaurants are listed from Zomato.
-            <div class="more">
+        <div class="projectsummarytext" id="meet2eatfull">
+          <p>
+            An authenticated web app where users can build a profile, users are then shown on a map, other users can interact with live chat. If users choose to eat, local restaurants are listed from Zomato.
+            </p>
+          <div class="project_full_text" id="pft3">
+            <p>
+              This was the final project for the General Assembly Web Development Immersive course, the scope was to use the MEAN stack and at least two API's. 
+            </p>
+            <p>
+              I decided to utilise the Google Maps API and Zomato's restaurant API to create and app enabling users to find other people who would like to meet up to eat. The application is authenticated using BCrypt or Oauth through Facebook. Once autheticated users are shown on a map or in table format. Users can chat to each other using websocket chat, the chat is deliberately not saved as one key factor was not to store huge amounts of personal information.
+            </p>
+            <p>
+              The Google Maps reverse geocoder was used to identify locations of users from just a town name and the Zomato API then generates a list of local cuisines, the aim being to then extend this to show restaurants based on the selected cuisine on the map of users
+            </p>
+            <p>
+              <strong>Bugs! </strong>Chat on the version on Heroku is not currently working and needs to be fixed. The app should identify users with similar tastes but that has not yet been implemented. The intention is to work on these bugs to fix them now that the WDI course is over.
+            </p>
+          </div>
+            <div class="more" id="m3">
             more...
             </div>
         </div>
-        <div class="projectfulltext" id="scarbblefull">
-        </div>
+       
       </div>
 
      
